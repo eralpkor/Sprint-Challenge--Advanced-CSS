@@ -184,7 +184,7 @@ p {
 .btn {
   background-color: #22283A;
   color: #F6F6F6;
-  padding: 10px 25px;
+  padding: 10px;
   text-align: center;
   width: 120px;
   -webkit-transition-duration: 0.4s;
@@ -385,15 +385,6 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
-}
-.home .walk .walk-text .btn {
-  background-color: #22283A;
-  color: #F6F6F6;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 20px;
-  width: 120px;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
