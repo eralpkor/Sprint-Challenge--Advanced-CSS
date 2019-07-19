@@ -6,6 +6,19 @@
 .border {
   border: 2px solid #22283A;
 }
+.wrap {
+  color: #454A59;
+  animation-name: larger;
+  animation-duration: 3s;
+}
+@keyframes larger {
+  from {
+    color: blue;
+  }
+  to {
+    color: yellow;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -204,6 +217,9 @@ p {
 }
 .navigation h1 {
   font-size: 4rem;
+  color: #454A59;
+  animation-name: larger;
+  animation-duration: 3s;
 }
 .navigation nav {
   margin-top: 20px;
@@ -295,7 +311,7 @@ footer {
   }
 }
 .home {
-  margin-top: 15%;
+  margin-top: 150px;
 }
 .home .intro {
   margin-top: 15%;

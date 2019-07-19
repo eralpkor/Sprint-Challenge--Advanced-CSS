@@ -34,3 +34,14 @@
 .hover(@cursor: pointer) {
   cursor: @cursor;
 }
+
+.wrap {
+  color: @river-bend;
+  animation-name: larger;
+  animation-duration: 3s;
+}
+
+@keyframes larger {
+  from {color: blue;}
+  to {color: yellow;}
+}
