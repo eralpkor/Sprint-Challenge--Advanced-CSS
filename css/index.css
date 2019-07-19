@@ -13,10 +13,10 @@
 }
 @keyframes larger {
   from {
-    color: blue;
+    color: gold;
   }
   to {
-    color: yellow;
+    color: crimson;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
