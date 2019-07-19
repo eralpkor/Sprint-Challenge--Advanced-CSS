@@ -1,6 +1,55 @@
 // Home Content
+// Eralp Korucubasi
+
+.changeColor {
+  display: block;
+  text-align: center;
+  background: rgba(@wild-sand, 0.7);
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  nav {
+    margin-top: 20px;
+  }
+
+  nav a {
+    font-size: 1.8rem;
+    margin-left: 20px;
+
+    @media @small {
+      font-size: 1.3rem;
+      margin-left: 10px;
+    }
+  }
+
+  h1 {
+    @media @small {
+      font-size: 2.7rem;
+    }
+  }
+
+  @media @phone {
+    display: block;
+    text-align: center;
+
+    nav {
+      margin: 5% 0 0;
+    }
+  }
+}
+
 
 .home {
+
+  margin-top: 150px;
 
   .intro {
 
@@ -9,9 +58,19 @@
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
+
+    .header-img {
+      .round-borders();
+    }
+
+    margin-top: 15%;
+
+    @media @phone {
+      margin-top: 130px;
+    }
+
   }
 
   .space-images {
@@ -24,6 +83,19 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    @media @phone {
+      .blast {
+        .width(90%);
+
+        margin: 20px 5%;
+      }
+
+      .sky,
+      .launch {
+        display: none;
+      }
     }
   }
 
@@ -46,6 +118,14 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      flex-direction: column-reverse;
+      .width();
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+
     .walk-text {
       width: 50%;
 
@@ -58,13 +138,34 @@
       }
 
       .btn {
+        .button(@btn-bg-color, @wild-sand, 10px, center, none, 20px);
+      }
+
+      @media @phone {
+        .btn {
+          width: 130px;
+          .width();
+          height: 70px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      @media @phone {
+        .width();
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
+      @media @phone {
+        .width();
+        margin: 10px 0;
+      }
+
       img {
         width: 100%;
         height: auto;
@@ -72,4 +173,20 @@
       }
     }
   }
-}// home
+
+  @media @phone {
+    .width(95%);
+
+    .header-img {
+      .width();
+    }
+  }
+
+  @media @phone {
+    footer {
+      margin-bottom: 2%;
+    }
+  }
+}
+
+// home
