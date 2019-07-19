@@ -89,10 +89,12 @@
   </div>
 
   <script>
-   window.onscroll = () => {
-  const nav = document.querySelector('#nav');
-  if(this.scrollY <= 10) nav.className = 'navigation'; else nav.className = 'changeColor';
-};
+    // change navbar color on scroll
+    window.onscroll = () => {
+      const nav = document.querySelector('#nav');
+      if (this.scrollY <= 10) nav.className = 'navigation';
+      else nav.className = 'changeColor';
+    };
   </script>
 </body>
 
